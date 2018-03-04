@@ -1,6 +1,6 @@
 package com.dragon.spring.jsp.controller;
 
-import java.util.Map;
+/*import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -17,4 +17,4 @@ public class WelcomeController {
         model.put("message", this.message);
         return "welcome";
     }
-}
+}*/

@@ -1,6 +1,6 @@
-package com.dragon.spring.jsp.controller;
+package com.dragon.spring.configurationproperties;
 
-/*import org.springframework.boot.SpringApplication;
+import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
@@ -17,4 +17,3 @@ public class SpringBootWebApplication extends SpringBootServletInitializer{
         SpringApplication.run(SpringBootWebApplication.class, args);
     }
 }
-*/

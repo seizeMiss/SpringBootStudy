@@ -1,6 +1,6 @@
 package com.dragon.spring.thymeleaf;
 
-import java.util.Map;
+/*import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -12,9 +12,9 @@ public class WelcomeController {
     @Value("${welcome.message:test}")
     private String message = "Hello World";
 
-    @RequestMapping("/welcome1")
+    @RequestMapping("/welcome2")
     public String welcome(Map<String, Object> model) {
         model.put("message", this.message);
         return "welcome";
     }
-}
+}*/
