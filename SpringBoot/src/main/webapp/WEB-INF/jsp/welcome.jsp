@@ -1,6 +1,9 @@
+<%-- <%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ page isELIgnored="false" %> 
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -14,7 +17,7 @@
     <link href="${springCss}" rel="stylesheet" />
      -->
     <c:url value="/css/main.css" var="jstlCss" />
-    <link href="${jstlCss}" rel="stylesheet" />
+    <link href="${jstlCss }" rel="stylesheet" />
 </head>
 <body>
     <nav class="navbar navbar-inverse">
@@ -33,8 +36,8 @@
     <div class="container">
         <div class="starter-template">
             <h1>Spring Boot Web JSP Example</h1>
-            <h2>Message: ${message}</h2>
+            <h2>Message: ${message }</h2>
         </div>
     </div>
 </body>
-</html>
+</html> --%>
