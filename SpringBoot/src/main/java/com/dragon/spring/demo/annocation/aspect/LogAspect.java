@@ -1,4 +1,4 @@
-package com.dragon.spring.annocation.aspect;
+package com.dragon.spring.demo.annocation.aspect;
 
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Aspect
 public class LogAspect {
-	@Pointcut("@annotation(com.dragon.spring.annocation.Log)")
+	@Pointcut("@annotation(com.dragon.spring.demo.annocation.Log)")
 	private void cut() { }
 	
 	@Around("cut()")

@@ -13,7 +13,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.alibaba.fastjson.JSON;
-
+/**
+ * 使用 @RestController 注解，是  @Controller + @ResponseBody 结合
+ * 因此直接返回给前端对应的值
+ * @author 
+ *
+ */
 @RestController
 public class SearchController {
 	UserService userService;

@@ -25,6 +25,7 @@ function fire_ajax_submit() {
                 + JSON.stringify(data, null, 4) + "</pre>";
             $('#feedback').html(json);
             console.log("SUCCESS : ", data);
+            console.log(data.msg);
             $("#btn-search").prop("disabled", false);
         },
         error: function (e) {

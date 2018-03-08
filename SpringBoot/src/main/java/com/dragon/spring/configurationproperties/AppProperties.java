@@ -9,7 +9,8 @@ import org.springframework.stereotype.Component;
 
 /**
  * 复杂配置
- * @author dragon-pc
+ * 读取配置文件  param.properties 的值，并且填充到对应的属性中
+ * @author 
  *
  */
 @Component

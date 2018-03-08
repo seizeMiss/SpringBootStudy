@@ -5,7 +5,8 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
 
     <link rel="stylesheet" type="text/css"
-          href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+          th:href="@{/webjarslocator/bootstrap/css/bootstrap.min.css}"/>
+    <!-- webjars/bootstrap/3.3.7/css/bootstrap.min.css -->
 </head>
 <body>
 
@@ -47,7 +48,7 @@
     </footer>
 </div>
 <script type="text/javascript"
-        src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+        th:src="@{/webjarslocator/jquery/jquery.js}"></script>
 <script type="text/javascript" th:src="@{/js/main.js}"></script>
 </body>
 </html>

@@ -1,10 +1,10 @@
-package com.dragon.spring.control;
+package com.dragon.spring.demo.comtrol;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.dragon.spring.service.DemoService;
+import com.dragon.spring.demo.service.DemoService;
 
 @RestController
 @RequestMapping("/aop")
