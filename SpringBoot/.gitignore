@@ -1,2 +1,7 @@
+# Create by .ignore support .plugin
+/.iml
+/.idea/
 /target/
-/.apt_generated/
+/.classpath
+/.project
+/.settings
