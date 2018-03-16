@@ -3,6 +3,8 @@
     <!--全局参数-->
     <Properties>
         <Property name="pattern">%d{yyyy-MM-dd HH:mm:ss,SSS} %5p %c{1}:%L - %m%n</Property>
+        <Property name="log4j2.root.path">spring-boot</Property>
+        <Property name="log4j2.package.path">spring-boot-package</Property>
     </Properties>
     <Loggers>
         <Root level="DEBUG">
@@ -10,7 +12,7 @@
             <AppenderRef ref="rolling_file"></AppenderRef>
         </Root>
         <!--将com.dragpm.spring写到文件-->
-        <Logger name="com.dragpm.spring" level="${log4j2.level}">
+        <Logger name="com.dragpm.spring" level="debug">
             <AppenderRef ref="file"></AppenderRef>
         </Logger>
     </Loggers>

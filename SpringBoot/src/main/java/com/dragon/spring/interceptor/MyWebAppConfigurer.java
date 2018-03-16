@@ -1,18 +1,21 @@
 package com.dragon.spring.interceptor;
 
+import javax.annotation.Resource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 @Configuration
 public class MyWebAppConfigurer extends WebMvcConfigurerAdapter{
 	
-	@Autowired
-	private MyInterceptor1 interceptor1;
+	@Resource(name="myInterceptor1")
+	private HandlerInterceptor interceptor1;
 	
-	@Autowired
-	private MyInterceptor2 interceptor2;
+	@Resource(name="myInterceptor2")
+	private HandlerInterceptor interceptor2;
 	
 	@Override
 	public void addInterceptors(InterceptorRegistry registry) {
