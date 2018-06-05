@@ -4,6 +4,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.List;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -14,6 +16,8 @@ public class StudentService {
 	
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
+
+	private static Logger logger = LogManager.getLogger(StudentService.class);
 	
 	public List<Student> listStudent(){
 		List<Student> students = null;
@@ -29,7 +33,7 @@ public class StudentService {
 				return student;
 			}
 		});
-		System.out.println("执行查询数据库的时间：" + (System.currentTimeMillis() - time));
+		logger.info("执行查询数据库的时间：" + (System.currentTimeMillis() - time));
 		return students;
 	}
 
