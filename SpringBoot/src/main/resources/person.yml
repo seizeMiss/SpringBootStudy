@@ -1,0 +1,12 @@
+person:
+   age: 18
+   boss: false
+   birth: 2019/01/17
+   maps: {k1: val1,k2: val2}
+   lists:
+     - lisi
+     - wangwu
+   dog:
+     name: haha
+     age: 4
+   name: zhangsan

@@ -8,10 +8,12 @@
     <name>SpringBoot Maven Webapp</name>
     <url>http://maven.apache.org</url>
 
+    <!-- 父项目spring-boot-dependencies 真正管理SpringBoot应用里面所有依赖版本  -> SpringBoot的仲裁中心-->
+    <!-- 导入依赖默认是不需要写版本;但是如果没有也是需要声明版本号 -->
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.4.1.RELEASE</version>
+        <version>1.5.9.RELEASE</version>
     </parent>
 
     <dependencies>
@@ -19,9 +21,21 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
         </dependency>
+        <!-- Spring-boot-starter: Spring-boot场景启动器；帮我们导入了web模块正常运行所依赖的组件 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!-- 導入配置文件處理器，配置文件進行綁定會提示 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -127,6 +141,7 @@
             <version>4.1.4</version>
         </dependency>
     </dependencies>
+    <!-- 生成一个可执行的jar包 -->
     <build>
         <plugins>
             <plugin>
