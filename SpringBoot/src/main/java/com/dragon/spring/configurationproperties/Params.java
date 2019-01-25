@@ -11,6 +11,11 @@ import org.springframework.stereotype.Component;
 @Component
 @PropertySource("classpath:param.properties")
 public class Params {
+	/**
+	 * <bean class="Params">
+	 *  	<property name="threadPoll" value="${key}"></property>
+	 * </bean>
+	 */
 	@Value("${thread-pool}")
     private int threadPool;
 

@@ -10,7 +10,10 @@ import org.springframework.stereotype.Component;
 /**
  * 复杂配置
  * 读取配置文件  param.properties 的值，并且填充到对应的属性中
- * @author 
+ * @author
+ * @ConfigurationProperties:告诉SpringBoot将本类中的所有属性和配置文件中先关配置文件进行绑定
+ * perfix="app" 配置文件中哪个下面的所有属性进行一一映射
+ * 只有这个组件是容器中的组件，才能容器提供的@ConfigurationProperties功能
  *
  */
 @Component
