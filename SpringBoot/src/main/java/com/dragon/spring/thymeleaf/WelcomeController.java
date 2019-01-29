@@ -15,6 +15,7 @@ public class WelcomeController {
     @RequestMapping("/welcome2")
     public String welcome(Map<String, Object> model) {
         model.put("message", this.message);
+        // classpath:templates/welcome.html
         return "welcome";
     }
 }
