@@ -1,7 +1,9 @@
 # Create by .ignore support .plugin
-/.iml
-/.idea/
-/target/
-/.classpath
-/.project
-/.settings
+/SpringBoot/.idea/
+/SpringBoot/.vscode/
+/SpringBoot/target/
+/SpringBoot/.settings
+/SpringBoot/log
+/SpringBoot/*.project
+/SpringBoot/*.classpath
+/SpringBoot/*.iml
